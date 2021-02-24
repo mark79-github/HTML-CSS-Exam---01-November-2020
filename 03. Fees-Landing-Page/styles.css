@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&display=swap');
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 10px auto;
+}
+
+.header-logo-wrapper {
+    width: 100px;
+    background: url(images/creative-logo.svg) no-repeat;
+    min-height: 40px;
+}
+
+.header-navigation ul {
+    display: flex;
+}
+
+.header-navigation ul li {
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 10px;
+}
+
+.header-navigation ul li:hover {
+    cursor: pointer
+}
+
+.header-info {
+    flex-basis: 100%;
+    min-height: 250px;
+    background: #54546D;
+}
+
+.header-info:before {
+    content: url(./images/calculator-icon.svg);
+    height: 20px;
+    position: absolute;
+    left: -100px;
+    top: 90px;
+}
+
+.header-info-title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.main {
+    position: relative;
+    top: -120px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    flex-basis: 31%;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.75);
+    border-radius: 6px;
+    min-height: 200px;
+    background: white;
+}
+
+.basics-description p,
+.fundamentals-description p,
+.professional-description p {
+    font-size: 12px;
+    padding: 10px 20px;
+}
+
+.basics-description h3,
+.fundamentals-description h3,
+.professional-description h3 {
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+}
+
+.basics-btn {
+    text-transform: uppercase;
+    background: #9A5DC6;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: unset;
+}
+
+.basics-btn:hover {
+    cursor: pointer;
+}
+
+.price {
+    color: white;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+.basics-price h3,
+.fundamentals-price h3,
+.professional-price h3 {
+    font-size: 14px;
+}
+
+.basics-price p,
+.fundamentals-price p,
+.professional-price p {
+    font-size: 12px;
+}
+
+.basics-price {
+    background: linear-gradient(90deg, #059c3e 0%, #49d47e 80%);
+    flex-direction: column;
+}
+
+.fundamentals-price {
+    background: linear-gradient(90deg, #4c6c88 0%, #629ace 80%);
+    align-items: center;
+}
+
+.professional-price {
+    background: linear-gradient(90deg, #4c39a7 0%, #8b7ce0 80%);
+    align-items: center;
+}
+
+.fundamentals-price-onsite,
+.professional-price-onsite {
+    position: relative;
+}
+
+.fundamentals-price-onsite:after,
+.professional-price-onsite:after {
+    content: '';
+    position: absolute;
+    border-left: 2px solid white;
+    min-height: 200%;
+    left: 125%;
+    top: -15px;
+}
+
+.courses-description {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.courses-description-details {
+    margin-top: 30px;
+}
+
+.courses-description-details p {
+    position: relative;
+    padding: 10px;
+}
+
+.courses-description-details-text {
+    font-size: 14px;
+}
+
+.courses-description-details p:nth-child(odd) {
+    background: #E6E6E6;
+}
+
+.courses-description-details p:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.courses-description-details p:first-child {
+    border-top-left-radius: 8px;
+}
+
+.courses-description-details p:last-child {
+    border-bottom-left-radius: 8px;
+}
+
+.courses-description-details p:before {
+    content: url("./images/check.svg");
+    left: 45rem;
+    position: relative;
+}
+
+.courses-description-details p:after {
+    content: url("./images/check.svg");
+    left: 55rem;
+    position: absolute;
+}
+
+.courses-description-details p:nth-child(1):after,
+.courses-description-details p:nth-child(2):after {
+    content: url("./images/cross.svg");
+    left: 55rem;
+    position: absolute;
+}
+
+.post-bank {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    align-items: center;
+    margin: 50px auto 0 auto;
+}
+
+.post-bank-info {
+    flex-basis: 75%;
+}
+
+.post-bank-info p,
+.courses-description-header p {
+    font-size: 12px;
+    padding: 20px 0 0 0;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.post-bank-logo-wrapper {
+    flex-basis: 20%;
+}
+
+.footer {
+    min-height: 60px;
+    background: #54546D;
+    position: relative;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 14px;
+    color: darkgray;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
